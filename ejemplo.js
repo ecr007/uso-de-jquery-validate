@@ -109,7 +109,7 @@ $("#formSolicitud").validate({
             },
             submitHandler: function() {
                 $('.loding_sel_enviar').fadeIn();
-
+		
                 $.ajax({
                     url: "sistema/acciones.php", 
                     dataType: "html",
