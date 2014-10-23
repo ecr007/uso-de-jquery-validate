@@ -31,7 +31,8 @@ rules: {
 $("#formSolicitud").validate({
             rules: {
                 //Datos Personales
-                textNombres: "required",
+                /*ARRAGLO*/'textNombres[]': "required",
+                
                 textApellido1: "required",
                 textFechaNacimiento: "required",
                 selectTipoDocumento: "required",
