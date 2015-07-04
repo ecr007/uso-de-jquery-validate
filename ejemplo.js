@@ -29,6 +29,14 @@ rules: {
 }
 
 $("#formSolicitud").validate({
+            //CallBack en caso de error
+            invalidHandler: function(form, validator) {
+	        var errors = validator.numberOfInvalids();
+	        
+	        if (errors) {
+	            $(".btnSolicitarTurno").prop('disabled',false);
+		}
+	    },
             rules: {
                 //Datos Personales
                 /*ARRAGLO*/'textNombres[]': "required",
